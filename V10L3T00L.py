@@ -21,7 +21,7 @@ def menu():
             os.system(f"gobuster dir -t 200 --no-error -o Gobuster -u {url_gobuster} -w {wordlist} -x php,txt,html")
             print("Você selecionou a Opção 1")
         elif escolha == '2':
-            os.system("python3 hashkiller.py")
+            os.system("python3 H4SHK1LL3R.py")
             print("Você selecionou a Opção 2")
         elif escolha == '3':
             url_nmap = input("Insira a URL a ser usada: ")

@@ -6,7 +6,7 @@ import os
 def menu():
     while True:
         print("\nMenu:")
-        print("1. Realizar brute force de diretótios com GOBUSTER")
+        print("1. Realizar brute force de diretórios com GOBUSTER")
         print("2. Realizar quebra de senha hash com HASHCAT")
         print("3. Realizar mapeamento de portas com NMAP")
         print("4. Realizar SQL Injection com SQLMAP")

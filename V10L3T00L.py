@@ -35,7 +35,7 @@ def menu():
             url_wafwoof = input("Insira a URL a ser usada: ")
             os.system(f"wafw00f -a -o Wafwoof_saida -f txt {url_wafwoof}")
             print("Você selecionou a Opção 5")
-        elif escolha == '6':
+        elif escolha == '0':
             print("Encerrando o programa.")
             break
         else:

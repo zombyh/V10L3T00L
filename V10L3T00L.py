@@ -19,7 +19,7 @@ def menu():
         if escolha == '1':
             url_gobuster = input("Insira a URL a ser usada: ")
             wordlist = input("Insira o caminho completo da Wordlist a ser usada: ")
-            os.system(f"gobuster dir -t 200 -e -r --no-error -o Gobuster_saida.txt -u {url_gobuster} -w {wordlist} -x php,txt,html")
+            os.system(f"gobuster dir -t 200 -e -r --no-error -o Gobuster_saida.txt -u {url_gobuster} -w {wordlist} -x php,txt,html,bkp,old,xml")
             print("Você selecionou a Opção 1")
         elif escolha == '2':
             os.system("python3 H4SHK1LL3R.py")

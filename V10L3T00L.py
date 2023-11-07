@@ -9,8 +9,9 @@ def menu():
         print("1. Realizar brute force de diretórios com GOBUSTER")
         print("2. Realizar quebra de senha hash com HASHCAT")
         print("3. Realizar mapeamento de portas com NMAP")
-        print("4. Realizar SQL Injection com SQLMAP")
+        print("4. Realizar teste de SQL Injection com SQLMAP")
         print("5. Realizar verificação de Firewall com WAFWOOF")
+        print("6. Realizar analise das tecnologias de um site com WHATWEB")
         print("0. Encerrar o programa")
 
         escolha = input("Escolha uma opção: ")
@@ -29,12 +30,16 @@ def menu():
             print("Você selecionou a Opção 3")
         elif escolha == '4':
             url_sqlmap = input("Insira a URL a ser usada: ")
-            os.system(f"sqlmap -u {url_sqlmap} --random-agent")
+            os.system(f"python3 SQLBR34K3R.py")
             print("Você selecionou a Opção 4")
         elif escolha == '5':
             url_wafwoof = input("Insira a URL a ser usada: ")
-            os.system(f"wafw00f -a -o Wafwoof_saida -f txt {url_wafwoof}")
+            os.system(f"wafw00f -v -o Wafwoof_saida -f txt {url_wafwoof}")
             print("Você selecionou a Opção 5")
+         elif escolha == '6':
+            url_whatweb = input("Insira a URL a ser usada: ")
+            os.system(f"whatweb {url_whatweb}")
+            print("Você selecionou a Opção 6")
         elif escolha == '0':
             print("Encerrando o programa.")
             break

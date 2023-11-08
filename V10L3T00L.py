@@ -25,7 +25,7 @@ def menu():
             os.system("python3 H4SHK1LL3R.py")
             print("Você selecionou a Opção 2")
         elif escolha == '3':
-            url_nmap = input("Insira a URL a ser usada: ")
+            url_nmap = input("Insira o IP a ser usado: ")
             os.system(f"nmap -D RND:20 -sS -p- -T4 --open -oN Nmap_saida.txt {url_nmap}")
             print("Você selecionou a Opção 3")
         elif escolha == '4':
